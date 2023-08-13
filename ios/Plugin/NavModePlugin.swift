@@ -7,12 +7,7 @@ import Capacitor
  */
 @objc(NavModePlugin)
 public class NavModePlugin: CAPPlugin {
-    private let implementation = NavMode()
-
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+    @objc func getNavigationMode(_ call: CAPPluginCall) {
+        call.unimplemented("Not implemented on iOS.")
     }
 }

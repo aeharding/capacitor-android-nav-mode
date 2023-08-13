@@ -1,3 +1,9 @@
 export interface NavModePlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  getNavigationMode(): Promise<{ mode: NavModes }>;
+}
+
+export enum NavModes {
+  ThreeButton = 0,
+  TwoButton = 1,
+  Gesture = 2,
 }

@@ -12,11 +12,9 @@ public class NavModePlugin extends Plugin {
     private NavMode implementation = new NavMode();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
+    public void getNavigationMode(PluginCall call) {
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("mode", implementation.getNavigationMode(getContext()));
         call.resolve(ret);
     }
 }

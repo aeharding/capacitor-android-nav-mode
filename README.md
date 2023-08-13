@@ -13,25 +13,34 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`getNavigationMode()`](#getnavigationmode)
+* [Enums](#enums)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### getNavigationMode()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+getNavigationMode() => Promise<{ mode: NavModes; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ mode: <a href="#navmodes">NavModes</a>; }&gt;</code>
 
 --------------------
+
+
+### Enums
+
+
+#### NavModes
+
+| Members           | Value          |
+| ----------------- | -------------- |
+| **`ThreeButton`** | <code>0</code> |
+| **`TwoButton`**   | <code>1</code> |
+| **`Gesture`**     | <code>2</code> |
 
 </docgen-api>

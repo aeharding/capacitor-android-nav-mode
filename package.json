@@ -1,6 +1,6 @@
 {
   "name": "capacitor-android-nav-mode",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Returns the Android navigation mode of the device",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
